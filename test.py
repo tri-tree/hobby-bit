@@ -13,12 +13,12 @@ import re
 
 print "begin"
 
-#browser = webdriver.Chrome(executable_path='C:\Users\akito\Anaconda2')
+#browser = webdriver.Chrome(executable_path='xxxxx')
 browser = webdriver.Chrome()
 
 #プロキシ設定
 #phantomjs_args = ['--cookie-file={}.format("cookie.txt")' ]
-#phantomjs_args = [ '--proxy=kmt.proxy.nic.fujitsu.com:8080','--proxy-auth=mori.akito@jp.fujitsu.com:0987654321']
+#phantomjs_args = [ '--proxy=xxxxx','--proxy-auth=xxxxx]
 
 #browser open
 #browser = webdriver.PhantomJS(service_args=phantomjs_args)    #プロキシ使う
@@ -26,7 +26,7 @@ browser = webdriver.Chrome()
 start = time.time()
 
 #phantom起動
-browser.get("https://www.mercari.com/jp/category/") # Load page
+browser.get("xxxxx") # Load page
 #browser.save_screenshot("test.png")
 print "ok"
 
@@ -39,7 +39,7 @@ html = BeautifulSoup(html_source,"html.parser")   #パーサー
 
 # In[ ]:
 
-''' #2017/4/25取得
+''' #xxxxx
 sect1 = html.find_all("li",class_="pc-header-nav-parent") #parent
 i = None; m= None; n = None;
 for i in sect1:
