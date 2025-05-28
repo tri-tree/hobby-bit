@@ -1,0 +1,3 @@
+# Ignore DB
+attendance.db
+__pycache__/
